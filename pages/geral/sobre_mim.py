@@ -65,4 +65,4 @@ coluna1,coluna2,coluna3,coluna4 = st.columns([5,0.5,0.5,5])
 with coluna2:
     st.image("imagens/logo_github.webp",link="https://github.com/yurialexey-2001",width=60,)
 with coluna3:
-    st.image("imagens/logo linkedin.png ",link="https://www.linkedin.com/in/yuri-oliveira-6a1bb1240/",width=60)
+    st.image("imagens/logo linkedin.png",link="https://www.linkedin.com/in/yuri-oliveira-6a1bb1240/",width=60)
