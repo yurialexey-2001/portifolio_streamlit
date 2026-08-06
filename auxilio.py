@@ -61,3 +61,17 @@ def duas_col(col1,col2,texto,imagem,width):
         st.image(imagem,width=width)
     with colB:
         st.markdown(texto,unsafe_allow_html=True)
+
+@st.dialog("AVISO")
+def home():
+    import time
+    st.info("Você será direcionado para a página inicial...")
+    time.sleep(3)
+    st.switch_page("pages/excel/home_excel.py")
+
+@st.dialog(title="Download em andamento")
+def baixando():
+    import time
+    st.success("Baixando...")
+    time.sleep(3)
+    st.rerun()

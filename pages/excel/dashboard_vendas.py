@@ -1,6 +1,5 @@
 import streamlit as st
-import time
-from auxilio import carregar_css,repartir_texto_coluna,centralizar
+from auxilio import carregar_css,repartir_texto_coluna,home,baixando
 
 st.page_link("pages/excel/home_excel.py",label="Voltar pra Home",icon=":material/home:")
 
@@ -155,9 +154,7 @@ with col1:
             file_name="Base + Dashboard.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         ):
-            st.info("Senha para edição da planilha / dashboard: 1234")
+            baixando()
 with col2:
     if st.button("Ir para Home",width="stretch"):
-        st.info("Indo para home...",)
-        time.sleep(2)
-        st.switch_page("pages/excel/home_excel.py")
+        home()
