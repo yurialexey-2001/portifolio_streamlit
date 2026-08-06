@@ -119,7 +119,7 @@ with st.container(border=True):
     ***Logística Internacional*** possui, construir um dashboard para a empresa e analisar alguns pontos cruciais e 
     muito importantes para operações na área da importação.""")
 
-st.header("Veja a interação do Dashboard")
+st.header("Veja a interação do Dashboard",text_alignment="center")
 st.video("imagens/dash_imp_interacao.mp4")
 
 col1,col2 = st.columns([1,1])
