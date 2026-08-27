@@ -18,7 +18,7 @@ col1,col2 = st.columns([1,1])
 
 #expander do Python e SQL
 with col1:
-    with st.expander("Python",width="stretch"):
+    with st.expander("Python",width="stretch",expanded=True):
         texto = """**Nível intermediário**<br>
                 Posso criar programas lógicos bem como desenvolver automações e utilizar a ferramenta para
                 tratamento e análise de dados. Me encontro estudando a linguagem e adquirindo mais
@@ -29,7 +29,7 @@ with col1:
             st.switch_page("pages/python/home_python.py")
     st.space("small")
         
-    with st.expander("SQL",width="stretch"):
+    with st.expander("SQL",width="stretch",expanded=True):
         texto="""**Nível Intermediário**<br>
                     Posso realizar consultas e cruzar informações para extrair insights relevantes 
                     de bancos de dados relacionais. Utilizo o SQL integrado com outras ferramentas para
@@ -43,7 +43,7 @@ with col1:
 #expander do Excel
 
 with col2:
-    with st.expander("Excel",width="stretch"):
+    with st.expander("Excel",width="stretch",expanded=True):
         texto="""**Nível intermediário**<br> 
                 Posso construir Dashboards interativos,
                 conheço uma vasta quantidade de fórmulas para diversos fins e também utilizo 
@@ -53,6 +53,17 @@ with col2:
         duas_col(1,5,texto=texto,imagem="imagens/logo do excel.png",width=50)
         if st.button("Clique aqui para ver meus projetos em Excel"):
             st.switch_page("pages/excel/home_excel.py")  
+    st.space("small")
+
+    with st.expander("Power BI",width="stretch",expanded=True):
+        texto="""**Nível básico**<br>
+                Posso utilizar o Power Query para o tratamento de dados, criar relacionemntos
+                entre as tabelas do banco, criar medidas simples utilizando fórmulas DAX e criar
+                dashboards que comunicam insights sem poluí-lo com design mirabolante."""
+        duas_col(1,5,texto=texto,imagem="imagens/logo do pbi.png",width=150)
+        if st.button("Clique aqui para ver meus projetos em Power BI"):
+            st.switch_page("pages/power_bi/home_pbi.py")
+
 
 st.space("medium")
 
