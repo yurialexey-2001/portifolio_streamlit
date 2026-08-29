@@ -1,7 +1,7 @@
 import streamlit as st
 from auxilio import carregar_css,repartir_texto_coluna,home,baixando
 
-st.page_link("pages/excel/home_excel.py",label="Voltar pra Home",icon=":material/home:")
+st.page_link("pages/excel/home_excel.py",label="Home",icon="🏠")
 
 carregar_css()
 

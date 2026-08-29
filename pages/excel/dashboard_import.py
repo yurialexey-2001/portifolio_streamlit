@@ -5,7 +5,7 @@ from auxilio import carregar_css,repartir_texto_coluna,home,baixando
 
 carregar_css()
 
-st.page_link("pages/excel/home_excel.py",label="Voltar pra Home",icon=":material/home:")
+st.page_link("pages/excel/home_excel.py",label="Home",icon="🏠")
 
 st.title("Dashboard de Despesas de Importação",text_alignment="center")
 

@@ -75,3 +75,8 @@ def baixando():
     st.success("Baixando...")
     time.sleep(3)
     st.rerun()
+
+
+def mostrar_pbi():
+    link="https://app.powerbi.com/view?r=eyJrIjoiMGFhZTMwNDAtYjlkNS00YmU1LTllNTctYzA3ZDIzNThlYTgyIiwidCI6IjljOTAzNDUwLTQ3OTYtNDI1Yy05NzYxLTc4MmM5NzY4YjA5ZSJ9"
+    st.iframe(link,height=600)
