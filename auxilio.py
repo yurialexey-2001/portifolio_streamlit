@@ -39,7 +39,6 @@ def apresentacao():
                             O intuito desse site não é ser o melhor site com as melhores funcionalidade,
                             é divulgar meus projetos pessoais como um portifólio.""")
 
-
 def carregar_css():
 
     with open("styles.css") as f:
@@ -76,7 +75,6 @@ def baixando():
     time.sleep(3)
     st.rerun()
 
-
 def mostrar_pbi():
-    link="https://app.powerbi.com/view?r=eyJrIjoiMGFhZTMwNDAtYjlkNS00YmU1LTllNTctYzA3ZDIzNThlYTgyIiwidCI6IjljOTAzNDUwLTQ3OTYtNDI1Yy05NzYxLTc4MmM5NzY4YjA5ZSJ9"
+    link="https://app.powerbi.com/view?r=eyJrIjoiOTNmNWZkM2EtNjFkMS00N2MzLWExMWUtYWY3MDBlNTE1YjJjIiwidCI6IjljOTAzNDUwLTQ3OTYtNDI1Yy05NzYxLTc4MmM5NzY4YjA5ZSJ9"
     st.iframe(link,height=600)

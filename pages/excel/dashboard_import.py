@@ -120,11 +120,11 @@ with st.container(border=True):
     muito importantes para operações na área da importação.""")
 
 st.header("Veja a interação do Dashboard",text_alignment="center")
-st.video("imagens/dash_imp_interacao.mp4")
+st.video("videos/dash_imp_interacao.mp4")
 
 col1,col2 = st.columns([1,1])
 with col1:
-    with open("RELATORIO FICTICIO DESPESAS DE IMPORTAÇÃO.xlsx", "rb") as dash_imp:
+    with open("bases de dados/RELATORIO FICTICIO DESPESAS DE IMPORTAÇÃO.xlsx", "rb") as dash_imp:
         if st.download_button(
             "Baixar base de dados + dashboard",
             width="stretch",

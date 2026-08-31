@@ -6,3 +6,4 @@ carregar_css()
 st.page_link("pages/geral/sobre_mim.py",label="Início",icon="🧑‍🦰")
 
 st.title("Em breve...")
+

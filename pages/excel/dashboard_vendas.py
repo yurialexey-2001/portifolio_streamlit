@@ -141,12 +141,12 @@ with st.container(border=True):
             """,unsafe_allow_html=True)
 
 st.header("Veja a interação do Dashboard",text_alignment="center")
-st.video("imagens/dashboard_interação.mp4")
+st.video("videos/dashboard_interação.mp4")
 
 
 col1,col2 = st.columns([1,1])
 with col1:
-    with open("base de dados + dashboard.xlsx", "rb") as base_dash:
+    with open("bases de dados/base de dados + dashboard.xlsx", "rb") as base_dash:
         if st.download_button(
             "Baixar base de dados + dashboard",
             width="stretch",
@@ -155,6 +155,7 @@ with col1:
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         ):
             baixando()
+
 with col2:
     if st.button("Ir para Home",width="stretch"):
         home()
