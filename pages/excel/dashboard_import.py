@@ -135,4 +135,4 @@ with col1:
             baixando()
 with col2:
     if st.button("Ir para Home",width="stretch"):
-        home()
+        home("excel")

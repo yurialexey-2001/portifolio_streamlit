@@ -21,5 +21,5 @@ with col1:
         st.image("imagens/analise prouni.png")
 
         if st.button("Ver projeto",key="dash-prouni",use_container_width=True):
-            st.switch_page("pages/power_bi/analise_prouni.py")
+            st.switch_page("pages/pbi/analise_prouni.py")
 
