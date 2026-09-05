@@ -63,7 +63,7 @@ with col2:
                 dashboards que comunicam insights sem poluí-lo com design mirabolante."""
         duas_col(1,5,texto=texto,imagem="imagens/logo do pbi.png",width=150)
         if st.button("Clique aqui para ver meus projetos em Power BI",use_container_width=True):
-            st.switch_page("pages/power_bi/home_power_bi.py")
+            st.switch_page("pages/pbi/home_pbi.py")
 
 
 st.space("medium")
