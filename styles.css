@@ -101,3 +101,32 @@
     align-items: center;
     justify-content: center;
 }
+
+div[data-testid="stToast"] {
+    background: linear-gradient(
+        135deg,
+        rgba(25, 25, 35, 0.98),
+        rgba(45, 45, 60, 0.98)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 16px 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 15px rgba(100, 100, 255, 0.08);
+
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+
+    backdrop-filter: blur(10px);
+
+    animation: toastEntrada 0.45s ease;
+}
+
+div[data-testid="stToast"] svg {
+    width: 21px;
+    height: 21px;
+}

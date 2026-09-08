@@ -12,14 +12,19 @@ st.space("medium")
 col1,col2,col3,col4 = st.columns(4)
 
 with col1:
-    with st.container(border=True):
+    with st.container(border=True,height=450):
         st.markdown("**Projeto 1**",text_alignment="center")
 
-        st.markdown("""**Análise da concessão de bolsas do PROUNI**""",text_alignment="center")
+        st.markdown("""**Análise da concessão de bolsas do PROUNI**""",
+                    text_alignment="center")
         
-        st.markdown("""Dashboard desenvolvido a fim de analisar a concessão de bolsas do PROUNI de 2021 a 2025.""")
+        st.markdown("""Dashboard desenvolvido a fim de analisar a concessão
+                    de bolsas do PROUNI de 2021 a 2025.""",
+                    text_alignment="center")
+        
         st.image("imagens/analise prouni.png")
 
-        if st.button("Ver projeto",key="dash-prouni",use_container_width=True):
+        if st.button("Ver projeto",key="dash-prouni",
+                     use_container_width=True):
             st.switch_page("pages/pbi/analise_prouni.py")
 
