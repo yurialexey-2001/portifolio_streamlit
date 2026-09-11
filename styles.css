@@ -15,27 +15,41 @@
     
 }
 
-[data-testid="stExpander"]{
-    background-color: whitesmoke;
-    color: black;
+[data-testid="stExpander"] {
+    background-color: #ffffff;
+    border: none !important;
     border-radius: 15px;
-    border: none;
-    padding: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    padding: 0;
 }
 
-[data-testid="stExpander"]:hover{
-    background-color:whitesmoke;
-    color: black;
-    transform: scale(1.05);
-    cursor: pointer
+[data-testid="stExpander"] details {
+    background-color: #ffffff;
+    border: none !important;
+    border-radius: 15px;
 }
 
-[data-testid="stExpander"] details summary{
-    background-color: whitesmoke;
-    color: black;
-    border-radius: 12px;
-    padding: 10px;
-    font-weight: 700;
+[data-testid="stExpander"] summary {
+    background-color: #ffffff;
+    border: none !important;
+    border-radius: 15px;
+    color: #111827;
+    padding: 15px;
+    font-weight: 600;
+}
+
+[data-testid="stExpander"]:hover {
+    transform: translateY(-2px);
+}
+
+[data-testid="stExpander"] summary:hover {
+    background-color: #f5f3ff;
+    color: #4f46e5;
+}
+
+[data-testid="stExpander"] [data-testid="stExpanderDetails"] {
+    background-color: #ffffff;
+    border: none !important;
 }
 
 [data-testid="stDownloadButton"] button{
@@ -129,4 +143,35 @@ div[data-testid="stToast"] {
 div[data-testid="stToast"] svg {
     width: 21px;
     height: 21px;
+}
+
+/* FUNDO DO DIALOG */
+div[role="dialog"] {
+    background: #2f2f2f !important;
+    border-radius: 18px !important;
+    border: none !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.30) !important;
+}
+
+/* TÍTULO */
+div[role="dialog"] h2 {
+    color: #ffffff !important;
+}
+
+/* TEXTO */
+div[role="dialog"] p {
+    color: #e5e5e5 !important;
+}
+
+/* st.info */
+div[role="dialog"] [data-testid="stAlert"] {
+    background: #404040 !important;
+    border: none !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+}
+
+/* TEXTO DENTRO DO st.info */
+div[role="dialog"] [data-testid="stAlert"] p {
+    color: #eeeeee !important;
 }

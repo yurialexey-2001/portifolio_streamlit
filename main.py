@@ -1,7 +1,8 @@
 import streamlit as st
 
 st.set_page_config(layout="wide",
-                   initial_sidebar_state="expanded")
+                   initial_sidebar_state="expanded",
+                   )
 pages = st.navigation({ 
     
     "GERAL":[st.Page("pages/geral/sobre_mim.py",title="Início",icon="🧑‍🦰")],

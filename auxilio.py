@@ -6,8 +6,8 @@ def centralizar(pri,sec,ter,texto):
         st.write(texto)
 
 def apresentacao():
-    with st.expander("Quem sou eu?",width="stretch",expanded=True):
-
+    with st.container(border=True):
+        st.subheader("Quem sou eu?",text_alignment="center")
         col1,col2 = st.columns([1,2.5])
         with col1:
             st.image("imagens/eu.jpeg",width=250)
@@ -40,12 +40,12 @@ def apresentacao():
                             é divulgar meus projetos pessoais como um portifólio.""")
 
 def carregar_css():
-
-    with open("styles.css") as f:
+    with open("styles.css", encoding="utf-8") as f:
         st.markdown(
-            f"<style>{f.read()}</style>",
-            unsafe_allow_html=True
-        )
+        f"<style>{f.read()}</style>",
+        unsafe_allow_html=True
+    )
+        
 
 def repartir_texto_coluna(col1,col2,texto,imagem,width):
     coluna1,coluna2 = st.columns([col1,col2])

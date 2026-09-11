@@ -10,13 +10,14 @@ st.space("small")
 apresentacao()
 
 st.space("small")
-st.subheader("Tecnologias que utilizo",text_alignment="center")
+st.subheader("Projetos que desenvolvi",text_alignment="center")
 
 col1,col2 = st.columns([1,1])
 
-#expander do Python e SQL
+#Python e SQL
 with col1:
-    with st.expander("Python",width="stretch",expanded=True):
+    with st.container(border=True,key="PYTHON"):
+        st.subheader("Python",text_alignment="center")
         texto = """**Nível intermediário**<br>
                 Posso criar programas lógicos bem como desenvolver automações e utilizar a ferramenta para
                 tratamento e análise de dados. Esse site, por exemplo, foi 100% criado
@@ -28,7 +29,8 @@ with col1:
             st.switch_page("pages/python/home_python.py")
     st.space("small")
         
-    with st.expander("SQL",width="stretch",expanded=True):
+    with st.container(border=True,key="SQL"):
+        st.subheader("SQL",text_alignment="center")
         texto="""**Nível Intermediário**<br>
                     Posso realizar consultas e cruzar informações para extrair insights relevantes 
                     de bancos de dados relacionais. Utilizo o SQL integrado com outras ferramentas para
@@ -39,10 +41,12 @@ with col1:
             st.switch_page("pages/sql/home_sql.py")
 
 
-#expander do Excel e Power BI
+#Excel e Power BI
 
 with col2:
-    with st.expander("Excel",width="stretch",expanded=True):
+    with st.container(border=True,key="EXCEL"):
+
+        st.subheader("Excel",text_alignment="center")
         texto="""**Nível intermediário**<br> 
                 Posso construir Dashboards interativos,
                 conheço uma vasta quantidade de fórmulas para diversos fins e também utilizo o Power Query
@@ -55,7 +59,9 @@ with col2:
             st.switch_page("pages/excel/home_excel.py")  
     st.space("small")
 
-    with st.expander("Power BI",width="stretch",expanded=True):
+    with st.container(border=True,key="POWER BI"):
+
+        st.subheader("Power BI",text_alignment="center")
         texto="""**Nível básico**<br>
                 Posso utilizar o Power Query dentro do Power BI para o tratamento de dados com
                 confiança, criar relacionementos
@@ -75,7 +81,19 @@ st.subheader("Conecte-se comigo nas redes!",text_alignment="center")
 coluna1,coluna2,coluna3,coluna4 = st.columns([5,0.5,0.5,5])
 
 with coluna2:
-    st.image("imagens/logo_github.webp",link="https://github.com/yurialexey-2001",width=60,)
+    st.image("imagens/logo_github.png",link="https://github.com/yurialexey-2001",width=90,)
 with coluna3:
     st.image("imagens/logo linkedin.png",link="https://www.linkedin.com/in/yuri-oliveira-6a1bb1240/",width=60)
 
+st.space("large")
+
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <h3>Yuri Oliveira</h3>
+        <p>Administração • Python • SQL • Excel</p>
+        <p>Desenvolvido com Python e Streamlit</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
