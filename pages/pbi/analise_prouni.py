@@ -37,46 +37,46 @@ st.header("Indicadores apontados pelo projeto")
 
 with st.container(border=True):
 
-    st.subheader("- Total de bolsas concedidas")
+    st.subheader("• Total de bolsas concedidas")
     st.markdown("""Aplicando os filtros é possível analisar o total de bolsas concedidas por Ano, Estado, Sexo, Curso,
       e outras categorias.<br>
       Além disso, também é possível visualizar a porcentagem do crescimento ou diminuição 
       da concessão de bolsas em relação ao ano anterior da análise.""",unsafe_allow_html=True)
     
 
-    st.subheader("- Percentual de bolsistas portadores de deficiência física")
+    st.subheader("• Percentual de bolsistas portadores de deficiência física")
     st.markdown("""Através do card, é possível visualizar a porcentagem de pessoas com deficiência física
     em relação ao total de bolsistas do filtro aplicado.<br> Além disso, ao posicionar o mouse sobre o card, é possível 
     visualizar a quantidade exata de pessoas com deficiência por sexo.""",unsafe_allow_html=True)
 
-    st.subheader("- Idade Média dos Bolsistas")
+    st.subheader("• Idade Média dos Bolsistas")
     st.markdown("""A idade média dos bolsistas no momento da concessão da bolsa.""")
 
-    st.subheader("- Distribuição Nacional dos Bolsistas")
+    st.subheader("• Distribuição Nacional dos Bolsistas")
     st.markdown("""Através do Mapa (que também é um dos filtros do dashboard) é possível visualizar a distribuição dos 
     bolsistas no país. Esse indicador aponta o Estado de origem do bolsista, e não onde a Universidade onde a bolsa foi 
     concedida. <br>Além disso, ao posicionar o mouse sobre os Estados, 
     é possível ver as 5 cidades com mais bolsistas do Estado.""",unsafe_allow_html=True)
 
-    st.subheader("- Principais cursos de concessão de bolsas")
+    st.subheader("• Principais cursos de concessão de bolsas")
     st.markdown("""O gráfico de barras empilhadas mostra pefeitamente os cursos com maior procura pelo bolsista
     PROUNI.<br>Além disso, a barra está divida também por gênero, para que seja mensurável a utilização das bolsas
      também por genêro. """,unsafe_allow_html=True)
 
-    st.subheader("- Raça/Cor dos bolsistas")
+    st.subheader("• Raça/Cor dos bolsistas")
     st.markdown("""Esse gráfico mostra a quantidade de bolsistas PROUNI por Raça/Cor.""")
 
-    st.subheader("- Quantidade de bolsistas por sexo")
+    st.subheader("• Quantidade de bolsistas por sexo")
     st.markdown("""Diferente dos outros indicadores que indicam a quantidade de bolsistsa por sexo de acordo com uma
     categoria específica, esse gráfico mostra a quantidade total de bolsistas por sexo como um todo.<br>
     Além disso, ao posicionar o mouse sobre as barras, é possível visualizar a porcentagem que a quantidade
     em questão representa em relação ao total geral ou ao total com filtros aplicados.""",unsafe_allow_html=True)
 
-    st.subheader("- Bolsistas por tipo de bolsa")
+    st.subheader("• Bolsistas por tipo de bolsa")
     st.markdown("""Mostra a quantidade de bolsistas com bolsa integral e parcial, bem como a porcentagem que 
     cada valor representa sobre a quantidade total de bolsistas ou ao total com filtros aplicados.""")
 
-    st.subheader("- Bolsistas por modalidade")
+    st.subheader("• Bolsistas por modalidade")
     st.markdown("""Mostra a quantidade de bolsistas que estudam Presencial e EAD, bem como a porcentagem que 
     cada valor representa sobre a quantidade total de bolsistas ou ao total com filtros aplicados""")
 
