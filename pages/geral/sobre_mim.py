@@ -50,7 +50,7 @@ with col2:
         texto="""**Nível intermediário**<br> 
                 Posso construir Dashboards interativos,
                 conheço uma vasta quantidade de fórmulas para diversos fins e também utilizo o Power Query
-                dentro do Excel para tratamento de dados, além. utilizo Excel no trabalho
+                dentro do Excel para tratamento de dados, além da construção de Dashboards. utilizo Excel no trabalho
                 diariamente e hoje me encontro estudando ainda mais
                 a ferramenta para atingir o **nível avançado**.
                 """

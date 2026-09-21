@@ -65,7 +65,7 @@ with st.container(border=True):
     • **datetime**: biblioteca para tratamento de dados de tempo (dia, hora, etc).""",
     unsafe_allow_html=True)
 
-with st.expander("Clique aqui para ver o código para da aplicação"):
+with st.expander("Clique aqui para ver o código da aplicação"):
     st.code(body="""
 import streamlit as st
 import yfinance as yf
