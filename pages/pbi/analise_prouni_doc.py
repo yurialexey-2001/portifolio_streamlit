@@ -1,5 +1,5 @@
 import streamlit as st
-from auxilio import carregar_css
+from auxilio import carregar_css, duas_col
 
 carregar_css()
 
@@ -116,6 +116,22 @@ with st.container(border=True):
                 RETURN
                     IF(ISBLANK(AnoAtual), BLANK(), DIVIDE(ValorAtual - ValorAnterior,ValorAnterior))""")   
 
-st.subheader("Tooltips criados (Dica de Ferramenta)")
+st.header("Tooltips criados (Dica de Ferramenta)")
 with st.container(border=True):
-    st.badge("Essa parte da documentação está sendo terminada!",color="yellow")
+    st.subheader("Top 5 cidades com maior número de bolsistas")
+    texto="""Esse tooltip será exibido ao posicionar o mouse sobre o Estado desejado. Ele mostra a quantidade de
+    bolsistas que as 5 cidades com mais bolsistas daquele Estado possui."""
+    duas_col(1.5,5,texto=texto,imagem="imagens/tooltip_cidades.png",width=380)
+
+    st.subheader(f"% sexo")
+    texto="""Esse tooltip será exibido ao posicionar o mouse sobre a barra de quantidade de bolsistas por sexo. Dessa forma
+    é possível visualizar a porcentagem que aquela quantidade de bolsistas representa no total."""
+    duas_col(1.5,5,texto=texto,imagem="imagens/tooltip_%sexo.png",width=380)
+
+    st.subheader("Quantidade de PCD por sexo")
+    texto="""Esse tooltip será exibido ao posicionar o mouse sobre a porcentagem geral de PCD (Pessoa com deficiência).
+    Ele exibirá o número de pessoas com deficiência de cada sexo."""
+    duas_col(1.5,5,texto=texto,imagem="imagens/tooltip_pcd.png",width=380)
+
+
+    
